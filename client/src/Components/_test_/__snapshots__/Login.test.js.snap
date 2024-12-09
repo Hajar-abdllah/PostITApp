@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the UI snapshot with screen.debug() 1`] = `
+<div>
+  <div>
+    <div
+      class="login container"
+    >
+      <form
+        class="div-form"
+      >
+        <div
+          class="login-form input row"
+        >
+          <div
+            class="loginImage col-md-3"
+          >
+            <img
+              src="logo-t.png"
+            />
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <h3>
+            Login
+          </h3>
+          <div
+            class="col-md-3"
+          >
+            <div
+              class="mb-3"
+            >
+              <label
+                class="form-label"
+                for="exampleEmail"
+              >
+                Email
+              </label>
+              <input
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Enter Email"
+                type="email"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-3"
+          >
+            <div
+              class="mb-3"
+            >
+              <label
+                class="form-label"
+                for="examplePassword"
+              >
+                Password
+              </label>
+              <input
+                class="form-control"
+                id="password"
+                name="password"
+                placeholder="Enter Password"
+                type="password"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="mb-3"
+          >
+            <input
+              class="form-check-input"
+              id="checkbox2"
+              type="checkbox"
+            />
+            <label
+              class="form-label"
+            >
+              Remember Me
+            </label>
+            <div>
+              <a
+                href=""
+              >
+                Forget Password?
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-3"
+          >
+            <button
+              class="button btn btn-primary"
+              type="button"
+            >
+              Login
+            </button>
+            <p
+              class="smalltext"
+            >
+              No Account? 
+              <a
+                href="/register"
+              >
+                Sign Up now.
+              </a>
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;
