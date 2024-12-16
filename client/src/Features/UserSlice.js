@@ -14,7 +14,7 @@ const initialState = {
 export const registerUser = createAsyncThunk("users/registerUser",
         async (userData)=>{
             try{
-                const response = await axios.post("http://localhost:3001/registerUser", {
+                const response = await axios.post(`${ENV.SERVER_URL}/registerUser`,
                     name: userData.name,
                     email: userData.email,
                     password: userData.password,
@@ -30,7 +30,7 @@ export const registerUser = createAsyncThunk("users/registerUser",
 });
 export const login = createAsyncThunk("users/login", async (userData) => {
   try {
-      const response = await axios.post("http://localhost:3001/login", {
+      const response = await axios.post(`${ENV.SERVER_URL}/login`, {
           email: userData.email,
           password: userData.password,
       });
@@ -45,7 +45,7 @@ export const login = createAsyncThunk("users/login", async (userData) => {
 export const logout = createAsyncThunk("/users/logout", async () => {
   try {
     // Send a request to your server to log the user out
-    const response = await axios.post("http://localhost:3001/logout");
+    const response = await axios.post(`${ENV.SERVER_URL}/logout`);
   } catch (error) {}
 });
 export const updateUserProfile = createAsyncThunk(
@@ -57,7 +57,7 @@ export const updateUserProfile = createAsyncThunk(
 
       // Send a PUT request to the server to update the user profile
       const response = await axios.put(
-        `http://localhost:3001/updateUserProfile/${userData.email}`, // API endpoint for updating user profile
+        `${ENV.SERVER_URL}/updateUserProfile/${userData.email}`, // API endpoint for updating user profile
         {
           // Request payload with user data to be updated
           email: userData.email,
