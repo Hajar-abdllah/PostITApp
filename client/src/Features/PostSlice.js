@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import * as ENV from "./config.js";
+import * as ENV from "../config.js";
 
 const initialState = {
   posts: [],
